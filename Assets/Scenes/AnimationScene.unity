@@ -1235,18 +1235,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2289341837191980424, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
-      propertyPath: m_GravityScale
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2850245875435126773, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
-      propertyPath: jumpPower
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 2850245875435126773, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
-      propertyPath: jumpVelocityShift
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5237982726578616082, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.15
