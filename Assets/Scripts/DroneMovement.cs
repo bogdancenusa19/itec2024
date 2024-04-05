@@ -11,7 +11,7 @@ public class DroneMovement : MonoBehaviour
 
     private void UpdatePosition()
     {
-        // adaugam o intarziere pana cand drona ajunge la pozitia player-ului
+        // add an delay to the drone movement
         transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.transform.position.x + droneXPosition, player.transform.position.y + droneYPosition), 7 * Time.deltaTime);
         
     }
