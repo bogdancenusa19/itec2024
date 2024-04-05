@@ -36,7 +36,10 @@ public class EnemiesShoot : MonoBehaviour
     private void SpawnBullet()
     {
        instantiatedBullet = Instantiate(bullet, gunEndpoint.position , gunEndpoint.rotation);
-       instantiatedBullet.GetComponent<BulletVelocity>().GetCorrectScale(gameObject);
+       BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
+       bulletVelocity.SetCorrectScale(gameObject);
+       bulletVelocity.SetDamage(damage);
+
     }
     
 }

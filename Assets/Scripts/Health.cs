@@ -23,11 +23,16 @@ public class Health : MonoBehaviour
         currentHealth += ammount;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void Die()
     {
-        if (other.CompareTag("Bullet"))
+        if (currentHealth <= 0)
         {
-            
+            Destroy(gameObject);
         }
+    }
+
+    public int GetHealth()
+    {
+        return currentHealth;
     }
 }
