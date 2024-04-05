@@ -12,11 +12,11 @@ public class RotateEnemy : MonoBehaviour
     {
         if (playerTransform.position.x > enemyTransform.position.x)
         {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            gameObject.transform.localScale = new Vector3(-5, 5, 5);
         }
         else if (playerTransform.position.x < enemyTransform.position.x)
         {
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
+            gameObject.transform.localScale = new Vector3(5, 5, 5);
         }
     }
 }

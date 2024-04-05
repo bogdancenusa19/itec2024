@@ -10,11 +10,10 @@ public class AIMovement : MonoBehaviour
     [SerializeField] private float rangeDistance;
     private float distance;
 
-    private bool isPlayerInRange = false;
+    private bool isPlayerInRange = true;
     void Update()
     {
         distance = Vector2.Distance(transform.position, player.transform.position);
-        Vector2 direction = player.transform.position - transform.position;
         if (distance <= rangeDistance)
         {
             if (distance >= chaseDistance)

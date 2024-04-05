@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class BulletVelocity : MonoBehaviour
 {
-    private AIMovement enemyScale;
     private float bulletSpeed = 15f;
     private float scaleToShoot = 0;
 
@@ -14,8 +13,6 @@ public class BulletVelocity : MonoBehaviour
     void Start()
     {
         bulletRb = GetComponent<Rigidbody2D>();
-        enemyScale = FindObjectOfType<AIMovement>();
-        scaleToShoot = -enemyScale.gameObject.transform.localScale.x;
         Destroy(gameObject, 3f);
         Debug.Log(scaleToShoot);
     }
@@ -23,6 +20,11 @@ public class BulletVelocity : MonoBehaviour
     void FixedUpdate()
     {
         bulletRb.velocity = new Vector2(bulletSpeed * scaleToShoot, 0f);
+    }
+
+    public void GetCorrectScale(GameObject parent)
+    {
+        scaleToShoot = -parent.transform.localScale.x;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

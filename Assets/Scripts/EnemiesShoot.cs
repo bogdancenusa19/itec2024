@@ -10,17 +10,20 @@ public class EnemiesShoot : MonoBehaviour
     [SerializeField] private Transform gunEndpoint;
     private float timeBetweenSpawns = 1f;
     private float nextSpawnTime = 0f;
+    private GameObject instantiatedBullet;
 
-    private AIMovement enemyAi;
+    [SerializeField] private int damage;
+
+    private AIMovement enemyAI;
 
     private void Start()
     {
-        enemyAi = GetComponent<AIMovement>();
+        enemyAI = GetComponent<AIMovement>();
     }
 
     private void Update()
     {
-        if (enemyAi.CanShootPlayer())
+        if (enemyAI.CanShootPlayer())
         {
             if (Time.time > nextSpawnTime)
             {
@@ -32,6 +35,8 @@ public class EnemiesShoot : MonoBehaviour
 
     private void SpawnBullet()
     {
-        Instantiate(bullet, gunEndpoint.position , gunEndpoint.rotation);
+       instantiatedBullet = Instantiate(bullet, gunEndpoint.position , gunEndpoint.rotation);
+       instantiatedBullet.GetComponent<BulletVelocity>().GetCorrectScale(gameObject);
     }
+    
 }
