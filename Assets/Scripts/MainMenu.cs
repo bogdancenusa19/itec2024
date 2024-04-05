@@ -8,7 +8,7 @@ using Image = UnityEngine.UI.Image;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private Image playerImage;
+    [SerializeField] private Canvas storeCanvas;
     
     public void Play()
     {
@@ -17,7 +17,12 @@ public class MainMenu : MonoBehaviour
 
     public void Store()
     {
-        //open store
+        storeCanvas.gameObject.SetActive(true);
+    }
+
+    public void CloseStore()
+    {
+        storeCanvas.gameObject.SetActive(false);
     }
 
     public void UpgradePlayer()
