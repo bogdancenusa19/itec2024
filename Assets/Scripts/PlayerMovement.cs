@@ -4,33 +4,57 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 { 
-    private float horizontal; 
-    private float speed = 8.0f;
-    private float jumpPower = 30.0f;
-    private bool isFacingRight = true;
-    
+    [Header("Attributes")]
+    [SerializeField] private float speed = 8.0f;
+    [SerializeField] private float jumpPower = 30.0f;
+    [SerializeField] private float jumpVelocityShift = 0.5f;
+
+    [Header("Objects & Components")]
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator animator;
     [SerializeField] private Transform groundCheck;
+
+    [Header("Layer")]
     [SerializeField] private LayerMask groundLayer;
+
+    #region Private Variables
+    private float horizontal;
+    private bool isFacingRight = true;
+    #endregion
+
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-        }
-        
-        if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
-        
+        Jump();
         Flip();
+        if(rb.velocity.x != 0)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
+
     }
 
     private void FixedUpdate()
     {
+        // Move
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    }
+
+    private void Jump()
+    {
+        horizontal = Input.GetAxisRaw("Horizontal");
+        if (Input.GetButtonDown("Jump") && IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpPower); // Jump
+        }
+
+        if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * jumpVelocityShift);
+        }
     }
 
     private bool IsGrounded()
