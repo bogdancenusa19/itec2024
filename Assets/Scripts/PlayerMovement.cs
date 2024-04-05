@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Jump();
         Flip();
+        IsGrounded();
         if(rb.velocity.x != 0)
         {
             animator.SetBool("isRunning", true);
@@ -46,8 +47,10 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            animator.SetTrigger("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpPower); // Jump
         }
 
@@ -59,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
+        animator.SetBool("isGrounded", Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer));
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
