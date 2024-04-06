@@ -30,9 +30,12 @@ public class PlayerShoot : MonoBehaviour
 
     instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
     BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
-
-    // Calculează direcția forward relativă la world space, folosind transform.forward a endpoint-ului
-    Vector2 forwardDirection = endpoints[index].right; // Pentru obiectele 2D, "right" este adesea folosit ca forward
+    Vector2 forwardDirection = endpoints[index].right;
+    if (gameObject.transform.localScale.x < 0)
+    {
+        forwardDirection = -endpoints[index].right;
+    }
+    
     bulletVelocity.SetDirection(forwardDirection.normalized);
     bulletVelocity.SetDamage(damage);
 

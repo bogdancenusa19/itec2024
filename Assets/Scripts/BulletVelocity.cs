@@ -31,17 +31,7 @@ public class BulletVelocity : MonoBehaviour
     {
         shootDirection = direction.normalized;
     }
-
-    public void SetCorrectScaleForEnemies(GameObject parent)
-    {
-        scaleToShoot = -parent.transform.localScale.x;
-    }
-
-    public void SetCorrectScaleForPlayer(GameObject parent)
-    {
-        scaleToShoot = parent.transform.localScale.x;
-    }
-
+    
     public void SetDamage(int value)
     {
         weaponDamage = value;
