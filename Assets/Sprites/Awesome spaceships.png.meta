@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Awesome spaceships_0
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 960
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b92500447f447d5a8bb290b5262266
+      internalID: 8047347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awesome spaceships_1
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 863
+        width: 103
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646bf20b20d954a858b9f811da6038d3
+      internalID: 685057768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awesome spaceships_2
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 850
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afa0ecc07e734aad98a1dedc21dd8cf
+      internalID: 1540935968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awesome spaceships_3
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 574
+        width: 551
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a6546a8baa344cab1272be8cd7d03c
+      internalID: -1857524943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awesome spaceships_4
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 518
+        width: 469
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3696993498df645f9a11833740ba828c
+      internalID: -1175485929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awesome spaceships_5
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 830
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f34c54bdd534d1a91e88b98b2ea523
+      internalID: 676334969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awesome spaceships_6
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 501
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591d92f4210a94de0bb26feb58f5f953
+      internalID: -1933171410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awesome spaceships_7
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 479
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a9a1b36e2434543bae423b82fbad16
+      internalID: 1006665155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Awesome spaceships_0: 8047347
+      Awesome spaceships_1: 685057768
+      Awesome spaceships_2: 1540935968
+      Awesome spaceships_3: -1857524943
+      Awesome spaceships_4: -1175485929
+      Awesome spaceships_5: 676334969
+      Awesome spaceships_6: -1933171410
+      Awesome spaceships_7: 1006665155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
