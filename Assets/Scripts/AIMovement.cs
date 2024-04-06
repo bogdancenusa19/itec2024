@@ -32,6 +32,11 @@ public class AIMovement : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
                 isPlayerInRange = true;
             }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            
+            }
         }
         else if (distance > chaseDistance)
         {

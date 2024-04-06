@@ -19,7 +19,6 @@ public class BulletVelocity : MonoBehaviour
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
         bulletRb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, 3f);
-        Debug.Log(scaleToShoot);
     }
     
     void FixedUpdate()

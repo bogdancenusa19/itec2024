@@ -34,13 +34,28 @@ public class EnemiesShoot : MonoBehaviour
 
     private void SpawnBullet()
 {
-    instantiatedBullet = Instantiate(bullet, gunEndpoint.position, Quaternion.identity); 
+    instantiatedBullet = Instantiate(bullet, gunEndpoint.position, gunEndpoint.rotation);
     BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
-    Transform playerTransform = GameObject.FindGameObjectWithTag("Player").transform; 
-    Vector2 directionToPlayer = playerTransform.position - gunEndpoint.position;
-
-    bulletVelocity.SetDirection(directionToPlayer.normalized); 
+    Vector2 forwardDirection = -gunEndpoint.right;
+    if (gameObject.transform.localScale.x < 0)
+    {
+        forwardDirection = gunEndpoint.right;
+    }
+    
+    bulletVelocity.SetDirection(forwardDirection.normalized);
     bulletVelocity.SetDamage(damage);
+
+    Collider2D enemyCollider = GetComponent<Collider2D>();
+    Collider2D bulletCollider = instantiatedBullet.GetComponent<Collider2D>();
+    if (enemyCollider != null && bulletCollider != null)
+    {
+        Physics2D.IgnoreCollision(enemyCollider, bulletCollider);
+    }
+}
+
+    public void SetDamage(int damage)
+    {
+        this.damage = damage;
 }
 
     
