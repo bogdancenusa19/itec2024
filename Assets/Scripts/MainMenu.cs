@@ -55,5 +55,11 @@ public class MainMenu : MonoBehaviour
          playerMenu.SetActive(false);
          playerInventory.SetActive(true);
     }
+
+    public void AddMoney()
+    { 
+        PlayerPrefs.SetInt("playerMoney", PlayerPrefs.GetInt("playerMoney") + 10);
+        money.text = PlayerPrefs.GetInt("playerMoney").ToString();
+    }
     
 }

@@ -9,11 +9,9 @@ public class Item : MonoBehaviour
 {
    [SerializeField] private int price;
    [SerializeField] private TextMeshProUGUI textPrice;
-   private string inventoryText = "Equip";
-   [SerializeField] private Image backgroundImage;
-   [SerializeField] private Image equipImage;
-   [SerializeField] private Color inventoryColor = new Color(0f, 0.870f, 1f, 1f);
-   [SerializeField] private Color equipColor = new Color(0f, 0.278f, 1f, 1f);
+   private string inventoryText = "EQUIP";
+   [SerializeField] private GameObject buyButton;
+   [SerializeField] private GameObject equipButton;
    [SerializeField] private Image coinImage;
 
    private void Start()
@@ -29,10 +27,8 @@ public class Item : MonoBehaviour
    public void PrepareItemForInventory()
    {
       textPrice.text = inventoryText;
-      backgroundImage.color = inventoryColor;
-      backgroundImage.color = new Color(0f, 0.870f, 1f, 1f);
-      equipImage.color = equipColor;
-      equipImage.color = new Color(0f, 0.278f, 1f, 1f);
+      buyButton.SetActive(false);
+      equipButton.SetActive(true);
       Destroy(coinImage);
    }
 }

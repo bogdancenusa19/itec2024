@@ -12,14 +12,10 @@ public class Store : MonoBehaviour
     [SerializeField] private TextMeshProUGUI moneyUI;
     [SerializeField] private Item[] items = new Item[6];
     [SerializeField] private GameObject inventoryContent;
-
-    private void Start()
-    {
-        playerMoney = PlayerPrefs.GetInt("playerMoney");
-    }
-
+    
     public void PurchaseItem(int index)
     {
+        playerMoney = PlayerPrefs.GetInt("playerMoney");
         int value = playerMoney - items[index].GetItemPrice();
         
         if (playerMoney >= items[index].GetItemPrice())
