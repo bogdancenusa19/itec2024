@@ -4845,6 +4845,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6148881819737693988, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6181191652062813297, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5057,7 +5061,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.15584946, y: 3.0543008}
@@ -6020,23 +6024,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454925282558468256, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 454925282558468256, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2981894878560713625, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2981894878560713625, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2981894878560713625, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3385559677419234519, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_Pivot.x
@@ -6124,7 +6128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6022660407351562010, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
