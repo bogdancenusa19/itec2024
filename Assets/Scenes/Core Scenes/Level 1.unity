@@ -1868,13 +1868,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445915065}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.47664213, w: 0.87909746}
-  m_LocalPosition: {x: 1.1712, y: -1.8162, z: 0}
-  m_LocalScale: {x: 0.81217325, y: 0.81217325, z: 0.81217325}
+  m_LocalRotation: {x: -0, y: -0, z: -0.8187424, w: 0.5741612}
+  m_LocalPosition: {x: 1.1006154, y: -1.1849053, z: 0}
+  m_LocalScale: {x: 0.81217307, y: 0.81217307, z: 0.8121732}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 142877155}
-  m_Father: {fileID: 747515351}
+  m_Father: {fileID: 1577427228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -56.933}
 --- !u!212 &445915067
 SpriteRenderer:
@@ -2565,11 +2565,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &747515351 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6171073688085929522, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
-  m_PrefabInstance: {fileID: 1875210969}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &761862941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3878,6 +3873,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522070282}
   m_CullTransparentMesh: 1
+--- !u!4 &1577427228 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5481921009440853476, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+  m_PrefabInstance: {fileID: 1875210969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1621018744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1183687676699266220, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
@@ -4503,8 +4503,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6778119679195792189, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 858308863}
-    - targetCorrespondingSourceObject: {fileID: 6171073688085929522, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
-      insertIndex: 0
+    - targetCorrespondingSourceObject: {fileID: 5481921009440853476, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 445915066}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6181191652062813297, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
@@ -4546,6 +4546,7 @@ MonoBehaviour:
   pistol: {fileID: 1875210973}
   shotgun: {fileID: 858308862}
   drone: {fileID: 1761117278}
+  lizard: {fileID: 445915065}
   pistolSprite: {fileID: 1019252713760053803, guid: ced839f9e920e485483d60d38398f5a7, type: 3}
   shotgunSprite: {fileID: 944067932281975740, guid: 4b327ee92fe3f4544bc95cb32d252f56, type: 3}
   weaponUI: {fileID: 1847815458}
