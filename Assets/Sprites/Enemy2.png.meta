@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Enemy2_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 113
+        width: 503
+        height: 854
+      alignment: 9
+      pivot: {x: 0.5445922, y: 0.015565385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687a9015cca837446ab0d0a8ebdf5db4
+      internalID: -264882638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy2_1
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 680
+        width: 271
+        height: 164
+      alignment: 9
+      pivot: {x: 0.9138357, y: 0.5759821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77246c231ed9a24fa56138eaf2e49f2
+      internalID: 1238347635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy2_2
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 613
+        width: 503
+        height: 442
+      alignment: 9
+      pivot: {x: 0.5891841, y: 0.065836355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7eea08603c9304697f0d47966dec85
+      internalID: -783081808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy2_3
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 217
+        width: 271
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5505794, y: 0.1597804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa93547ba1d53b47b1ebb63c4c268aa
+      internalID: 896354163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy2_4
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 519
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bce9dab317846d47914e8b49cd356d7
+      internalID: 760771299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy2_5
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 322
+        width: 120
+        height: 179
+      alignment: 9
+      pivot: {x: 0.73883563, y: 0.89680487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638ca7ed0bf424941a426398b4cb4d46
+      internalID: -709680928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy2_6
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 284
+        width: 114
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5546532, y: 0.8951069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5145b615b4b0ed84b99c8af99caef3df
+      internalID: 1665370812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +279,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Enemy2_0: -264882638
+      Enemy2_1: 1238347635
+      Enemy2_2: -783081808
+      Enemy2_3: 896354163
+      Enemy2_4: 760771299
+      Enemy2_5: -709680928
+      Enemy2_6: 1665370812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

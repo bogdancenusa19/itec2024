@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6e21c1f8d38bdac4fb564bea13d60430
+guid: 11ee347e2621ac140b911ce7216c5920
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,148 +123,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy1_0
+      name: Money bags_0
       rect:
         serializedVersion: 2
-        x: 836
-        y: 942
-        width: 55
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 267
+        y: 94
+        width: 685
+        height: 815
+      alignment: 9
+      pivot: {x: 0.47998947, y: 0.6376068}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf862ec439be9054d8a9c24a820b648e
-      internalID: -37816875
+      spriteID: e56048c45a203b94bb82d50348f423d2
+      internalID: 234864776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_1
+      name: Money bags_1
       rect:
         serializedVersion: 2
-        x: 1432
-        y: 635
-        width: 454
-        height: 406
+        x: 1095
+        y: 94
+        width: 685
+        height: 740
       alignment: 9
-      pivot: {x: 0.47255245, y: 0.06110055}
+      pivot: {x: 0.47998938, y: 0.70880693}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b12e4cf5e4eed64479cf3f7158a32e22
-      internalID: -1544349369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy1_2
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 244
-        width: 454
-        height: 690
-      alignment: 9
-      pivot: {x: 0.439616, y: 0.028646939}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6112a391b12c7047ba7fc47dfeb04a4
-      internalID: -333676163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy1_3
-      rect:
-        serializedVersion: 2
-        x: 689
-        y: 551
-        width: 322
-        height: 151
-      alignment: 9
-      pivot: {x: 0.89472914, y: 0.4669905}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79e4824b809e6df44a8718b9d0a1c971
-      internalID: 1762004234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy1_4
-      rect:
-        serializedVersion: 2
-        x: 1290
-        y: 378
-        width: 122
-        height: 136
-      alignment: 9
-      pivot: {x: 0.58171105, y: 0.8298517}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9b480bb71f261e449b552466b5eceb5
-      internalID: -789281497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy1_5
-      rect:
-        serializedVersion: 2
-        x: 1496
-        y: 370
-        width: 99
-        height: 143
-      alignment: 9
-      pivot: {x: 0.44965154, y: 0.88341707}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42c466bc947d0e64faed0d92ed69e122
-      internalID: 102966784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy1_6
-      rect:
-        serializedVersion: 2
-        x: 1659
-        y: 340
-        width: 214
-        height: 203
-      alignment: 9
-      pivot: {x: 0.51746804, y: 0.094862014}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0958de9c1f612c47b9f67e73f637e1d
-      internalID: -685269453
+      spriteID: d3bdccd800f7aa849a66c243f97730b4
+      internalID: -1386599069
       vertices: []
       indices: 
       edges: []
@@ -280,13 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy1_0: -37816875
-      Enemy1_1: -1544349369
-      Enemy1_2: -333676163
-      Enemy1_3: 1762004234
-      Enemy1_4: -789281497
-      Enemy1_5: 102966784
-      Enemy1_6: -685269453
+      Money bags_0: 234864776
+      Money bags_1: -1386599069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
