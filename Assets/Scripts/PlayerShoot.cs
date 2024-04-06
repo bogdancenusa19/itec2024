@@ -21,7 +21,7 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
-    private void SpawnBullet()
+  private void SpawnBullet()
 {
     if (index >= endpoints.Length)
     {
@@ -30,7 +30,10 @@ public class PlayerShoot : MonoBehaviour
 
     instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
     BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
-    bulletVelocity.SetCorrectScaleForPlayer(gameObject);
+
+    // Calculează direcția forward relativă la world space, folosind transform.forward a endpoint-ului
+    Vector2 forwardDirection = endpoints[index].right; // Pentru obiectele 2D, "right" este adesea folosit ca forward
+    bulletVelocity.SetDirection(forwardDirection.normalized);
     bulletVelocity.SetDamage(damage);
 
     Collider2D playerCollider = GetComponent<Collider2D>();
@@ -42,6 +45,8 @@ public class PlayerShoot : MonoBehaviour
 
     index++;
 }
+
+
 
     
 }

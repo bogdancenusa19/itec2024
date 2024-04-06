@@ -33,12 +33,15 @@ public class EnemiesShoot : MonoBehaviour
     }
 
     private void SpawnBullet()
-    {
-       instantiatedBullet = Instantiate(bullet, gunEndpoint.position , gunEndpoint.rotation);
-       BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
-       bulletVelocity.SetCorrectScaleForEnemies(gameObject);
-       bulletVelocity.SetDamage(damage);
+{
+    instantiatedBullet = Instantiate(bullet, gunEndpoint.position, Quaternion.identity); 
+    BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
+    Transform playerTransform = GameObject.FindGameObjectWithTag("Player").transform; 
+    Vector2 directionToPlayer = playerTransform.position - gunEndpoint.position;
 
-    }
+    bulletVelocity.SetDirection(directionToPlayer.normalized); 
+    bulletVelocity.SetDamage(damage);
+}
+
     
 }

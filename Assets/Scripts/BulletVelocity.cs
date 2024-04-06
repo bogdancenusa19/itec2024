@@ -6,6 +6,7 @@ using UnityEngine;
 public class BulletVelocity : MonoBehaviour
 {
     [SerializeField] private float bulletSpeed;
+    private Vector2 shootDirection;
     private float scaleToShoot = 0;
 
     private Rigidbody2D bulletRb;
@@ -23,7 +24,12 @@ public class BulletVelocity : MonoBehaviour
     
     void FixedUpdate()
     {
-        bulletRb.velocity = new Vector2(bulletSpeed * scaleToShoot, 0f);
+        bulletRb.velocity = shootDirection * bulletSpeed;
+    }
+
+    public void SetDirection(Vector2 direction)
+    {
+        shootDirection = direction.normalized;
     }
 
     public void SetCorrectScaleForEnemies(GameObject parent)
