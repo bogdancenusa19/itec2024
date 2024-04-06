@@ -35,7 +35,15 @@ public class ArmPivot : MonoBehaviour
     
     private void RotateEnemyArms()
     {
-        Vector2 direction = player.transform.position - enemy.transform.position;
+        Vector2 targetPosition = player.transform.position;
+    
+        // Ajustează această valoare pentru a schimba cât de sus deasupra jucătorului țintește inamicul
+        float aimAboveOffset = -3.0f; // De exemplu, țintește cu 1 metru deasupra centrului jucătorului
+
+        // Adaugă offset-ul la poziția țintă
+        targetPosition.y += aimAboveOffset;
+
+        Vector2 direction = targetPosition - (Vector2)enemy.transform.position;
         bool isFacingLeft = enemy.transform.localScale.x < player.transform.localScale.x;
         if (!isFacingLeft)
         {

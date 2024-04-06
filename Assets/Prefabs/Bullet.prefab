@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 20
-  duration: 1
+  duration: 3
   particleEffect: {fileID: 8641652029881124188, guid: 0f77b8f148909ef42940c91fe11292d4, type: 3}
 --- !u!70 &1337050204307082928
 CapsuleCollider2D:
@@ -152,7 +152,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
