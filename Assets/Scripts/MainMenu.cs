@@ -7,22 +7,10 @@ using UnityEngine.SceneManagement;
 using Image = UnityEngine.UI.Image;
 
 public class MainMenu : MonoBehaviour
-{
-    [SerializeField] private Canvas storeCanvas;
-    
+{    
     public void Play()
     {
         SceneManager.LoadScene(1);
-    }
-
-    public void Store()
-    {
-        storeCanvas.gameObject.SetActive(true);
-    }
-
-    public void CloseStore()
-    {
-        storeCanvas.gameObject.SetActive(false);
     }
 
     public void UpgradePlayer()
