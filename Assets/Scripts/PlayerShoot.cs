@@ -22,19 +22,26 @@ public class PlayerShoot : MonoBehaviour
     }
 
     private void SpawnBullet()
+{
+    if (index >= endpoints.Length)
     {
-        if (index >= endpoints.Length)
-        {
-            index = 0;
-        }
-
-        instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
-        BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
-        bulletVelocity.SetCorrectScaleForPlayer(gameObject);
-        bulletVelocity.SetDamage(damage);
-        index++;
-
-        
+        index = 0;
     }
+
+    instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
+    BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
+    bulletVelocity.SetCorrectScaleForPlayer(gameObject);
+    bulletVelocity.SetDamage(damage);
+
+    Collider2D playerCollider = GetComponent<Collider2D>();
+    Collider2D bulletCollider = instantiatedBullet.GetComponent<Collider2D>();
+    if (playerCollider != null && bulletCollider != null)
+    {
+        Physics2D.IgnoreCollision(playerCollider, bulletCollider);
+    }
+
+    index++;
+}
+
     
 }

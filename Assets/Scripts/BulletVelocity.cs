@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BulletVelocity : MonoBehaviour
 {
-    private float bulletSpeed = 15f;
+    [SerializeField] private float bulletSpeed;
     private float scaleToShoot = 0;
 
     private Rigidbody2D bulletRb;
@@ -51,6 +51,16 @@ public class BulletVelocity : MonoBehaviour
                 playerHealth.Die();
             }
             Debug.Log(playerHealth.GetHealth());
+            Destroy(gameObject);
+        }
+
+        if (other.CompareTag("Enemy"))
+        {
+            other.GetComponent<Health>().TakeDamage(weaponDamage);
+            if (other.GetComponent<Health>().GetHealth() <= 0)
+            {
+                other.GetComponent<Health>().Die();
+            }
             Destroy(gameObject);
         }
     }
