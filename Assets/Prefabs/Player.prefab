@@ -582,6 +582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6171073688085929522}
   - component: {fileID: 8828740325997772397}
+  - component: {fileID: 1749718310347182772}
   m_Layer: 0
   m_Name: Left Upper Arm
   m_TagString: Untagged
@@ -597,14 +598,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5899659784197236945}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.25334555, w: 0.9673759}
+  m_LocalRotation: {x: -0, y: -0, z: 0.27992994, w: 0.9600205}
   m_LocalPosition: {x: -1.9538962, y: 2.3743703, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5481921009440853476}
   m_Father: {fileID: 3354432471221533750}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 29.351}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32.512}
 --- !u!212 &8828740325997772397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -657,6 +658,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1749718310347182772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899659784197236945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33061261b5af38f4993e1a4788f5a807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6181191652062813297}
 --- !u!1 &6181191652062813297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,14 +1209,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8115357109308566094}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.47670162, w: 0.8790652}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6019336, w: 0.79854614}
   m_LocalPosition: {x: 0.559, y: -0.494, z: 0}
   m_LocalScale: {x: 0.6419326, y: 0.6419326, z: 0.6419327}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1183687676699266220}
   m_Father: {fileID: 6778119679195792189}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -74.017}
 --- !u!212 &8791247708516059490
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1350,6 +1364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5531460658009929383}
   - component: {fileID: 3292721285328086534}
+  - component: {fileID: 1346610413678263549}
   m_Layer: 0
   m_Name: Right Upper Arm
   m_TagString: Untagged
@@ -1365,14 +1380,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8570439811674261985}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.12411312, w: 0.9922681}
+  m_LocalRotation: {x: -0, y: -0, z: -0.078201726, w: 0.9969376}
   m_LocalPosition: {x: 1.2300218, y: 2.9021173, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6778119679195792189}
   m_Father: {fileID: 3354432471221533750}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.259}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.97}
 --- !u!212 &3292721285328086534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1425,6 +1440,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1346610413678263549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8570439811674261985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33061261b5af38f4993e1a4788f5a807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &8923543263324407622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,10 +1477,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8923543263324407622}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.02317652, w: 0.9997314}
   m_LocalPosition: {x: 3.35, y: 0.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 154833753401841783}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.656}
