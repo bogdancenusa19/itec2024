@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Props2_0
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 126
+        width: 499
+        height: 601
+      alignment: 9
+      pivot: {x: 0.49500552, y: 0.050074928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d953e5b6e3da79743bce3c14db951cf2
+      internalID: -166977995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props2_1
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 138
+        width: 278
+        height: 505
+      alignment: 9
+      pivot: {x: 0.44172856, y: 0.058310963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b525bc911cf44de46ba78ce13d310181
+      internalID: -1859754525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +174,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Props2_0: -166977995
+      Props2_1: -1859754525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
