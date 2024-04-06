@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,154 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Roman_0
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 182
-        width: 443
-        height: 802
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37d0e8f7b52ce7d4ab80e8289fb1c23d
-      internalID: 1642206743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roman_1
-      rect:
-        serializedVersion: 2
-        x: 733
-        y: 729
-        width: 299
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 584eb6f9e82b3d54885515327cffc64d
-      internalID: 193295432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roman_2
-      rect:
-        serializedVersion: 2
-        x: 1418
-        y: 563
-        width: 443
-        height: 506
-      alignment: 9
-      pivot: {x: 0.587199, y: 0.11336243}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5622812404163174d9cb527e6b1c40ea
-      internalID: -1754575610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roman_3
-      rect:
-        serializedVersion: 2
-        x: 869
-        y: 337
-        width: 158
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c4c233c7476b744498ebd55538e6752
-      internalID: 1525975697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roman_4
-      rect:
-        serializedVersion: 2
-        x: 1259
-        y: 281
-        width: 98
-        height: 138
-      alignment: 9
-      pivot: {x: 0.65258414, y: 0.87022024}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a0fe51a21eec9441922c3d96f4f4392
-      internalID: 787354341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roman_5
-      rect:
-        serializedVersion: 2
-        x: 1449
-        y: 272
-        width: 81
-        height: 155
-      alignment: 9
-      pivot: {x: 0.438463, y: 0.82157594}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b8d19c99acb38b4988eae1f60b09806
-      internalID: -793608794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roman_6
-      rect:
-        serializedVersion: 2
-        x: 1607
-        y: 187
-        width: 254
-        height: 291
-      alignment: 9
-      pivot: {x: 0.50981176, y: 0.110324346}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b06ade2009a24cc4fb1994e085ccc733
-      internalID: -136286620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -279,14 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Roman_0: 1642206743
-      Roman_1: 193295432
-      Roman_2: -1754575610
-      Roman_3: 1525975697
-      Roman_4: 787354341
-      Roman_5: -793608794
-      Roman_6: -136286620
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

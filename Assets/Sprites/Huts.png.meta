@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Huts_0
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 722
-        width: 280
-        height: 164
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbb35048d7760ee49a86ace70c22bf39
-      internalID: 1027147716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huts_1
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 182
-        width: 578
-        height: 654
-      alignment: 9
-      pivot: {x: 0.5474296, y: 0.071293846}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21bc7db091c60044aab685cf3f8aca7d
-      internalID: 126100010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huts_2
-      rect:
-        serializedVersion: 2
-        x: 1414
-        y: 536
-        width: 505
-        height: 281
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83921213e9ad7434e9e33b29b109bfde
-      internalID: -1831562293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huts_3
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 116
-        width: 524
-        height: 467
-      alignment: 9
-      pivot: {x: 0.5166464, y: 0.13444012}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 760f2640954bb1a4db2517e35c4fb350
-      internalID: 1132479326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Huts_0: 1027147716
-      Huts_1: 126100010
-      Huts_2: -1831562293
-      Huts_3: 1132479326
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
