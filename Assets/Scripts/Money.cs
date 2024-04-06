@@ -8,7 +8,7 @@ public class Money : MonoBehaviour
     [SerializeField] private GameObject playerBag;
     private bool bagHasMoney = false;
     private int playerMoney = 0;
-    private int coinValue = 10;
+    private int coinValue = 5;
 
     private void Start()
     {
