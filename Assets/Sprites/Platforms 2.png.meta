@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6687124ddb895ec4290b20d773ef2b35
+guid: 94971b4f9a3a40b4e8bce2a90a232e11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Huts_0
+      name: Platforms 2_0
       rect:
         serializedVersion: 2
-        x: 214
-        y: 722
-        width: 280
+        x: 229
+        y: 654
+        width: 851
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1abc1241e60c149b42e891d69758db
+      internalID: 150203020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platforms 2_1
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 749
+        width: 244
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5306417, y: 0.13979721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e86e0765678dd046ad01255c3310bd3
+      internalID: -703912733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platforms 2_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 246
+        width: 1226
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5be742401a5cb45b2f92be462a7d6c
+      internalID: 670393348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platforms 2_3
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 543
+        width: 214
         height: 164
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbb35048d7760ee49a86ace70c22bf39
-      internalID: 1027147716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huts_1
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 182
-        width: 578
-        height: 654
       alignment: 9
-      pivot: {x: 0.5474296, y: 0.071293846}
+      pivot: {x: 0.52329147, y: 0.07450048}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21bc7db091c60044aab685cf3f8aca7d
-      internalID: 126100010
+      spriteID: 8c754a45a2b854e4ba55bea797f55879
+      internalID: -1544217340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Huts_2
+      name: Platforms 2_4
       rect:
         serializedVersion: 2
-        x: 1414
-        y: 536
-        width: 505
-        height: 281
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83921213e9ad7434e9e33b29b109bfde
-      internalID: -1831562293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huts_3
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 116
-        width: 524
-        height: 467
+        x: 1548
+        y: 151
+        width: 197
+        height: 118
       alignment: 9
-      pivot: {x: 0.5166464, y: 0.13444012}
+      pivot: {x: 0.53162676, y: 0.15151267}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 760f2640954bb1a4db2517e35c4fb350
-      internalID: 1132479326
+      spriteID: 9c612bd7ffe7f634ab8b19cca3bf9bfa
+      internalID: -332397534
       vertices: []
       indices: 
       edges: []
@@ -217,10 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Huts_0: 1027147716
-      Huts_1: 126100010
-      Huts_2: -1831562293
-      Huts_3: 1132479326
+      Platforms 2_0: 150203020
+      Platforms 2_1: -703912733
+      Platforms 2_2: 670393348
+      Platforms 2_3: -1544217340
+      Platforms 2_4: -332397534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
