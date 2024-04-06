@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PauseMenu: MonoBehaviour
@@ -35,6 +36,7 @@ public class PauseMenu: MonoBehaviour
         isPaused = true;
     }
     
+    [Obsolete("Obsolete")]
     public void RestartGame()
     {
         Debug.Log("Restart!");
@@ -42,6 +44,7 @@ public class PauseMenu: MonoBehaviour
         Application.LoadLevel(Application.loadedLevel); // Reîncarcă scena curentă
     }
     
+    [Obsolete("Obsolete")]
     public void LoadMenu()
     {
         Debug.Log("Loading menu...");

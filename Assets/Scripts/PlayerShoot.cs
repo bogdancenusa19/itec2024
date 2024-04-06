@@ -11,6 +11,7 @@ public class PlayerShoot : MonoBehaviour
     private GameObject bullet;
     [SerializeField] private Transform[] endpoints = new Transform[2];
     [SerializeField] private float accuracy = 100f; 
+    [SerializeField] private GameObject isPaused; 
     private GameObject instantiatedBullet;
     private Rigidbody2D rb;
 
@@ -33,7 +34,7 @@ public class PlayerShoot : MonoBehaviour
             bullet = bulletPistol;
         }
         
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isPaused.activeSelf)
         {
                 SpawnBullet();
         }
