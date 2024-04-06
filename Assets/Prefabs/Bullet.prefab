@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 20
-  duration: 0.5
+  duration: 1
+  particleEffect: {fileID: 8641652029881124188, guid: 0f77b8f148909ef42940c91fe11292d4, type: 3}
 --- !u!70 &1337050204307082928
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

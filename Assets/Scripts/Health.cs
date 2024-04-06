@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     [SerializeField] private bool isThisPlayer = false;
 
     [SerializeField] private Slider _slider;
+
+    [SerializeField] private GameObject bloodParticles;
     
 
     private void Start()
@@ -30,6 +32,8 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Take Damage!");
+        Instantiate(bloodParticles, transform.position, Quaternion.identity);
         currentHealth -= damage;
         UpdateUI();
     }

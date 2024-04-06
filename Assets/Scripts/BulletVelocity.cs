@@ -9,6 +9,9 @@ public class BulletVelocity : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float duration = 3f;
 
+    [Header("Effects")]
+    public GameObject particleEffect;
+
     private Vector2 shootDirection;
     private float scaleToShoot = 0;
 
@@ -41,6 +44,8 @@ public class BulletVelocity : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Instantiate(particleEffect, transform.position, Quaternion.identity);
+
         if (other.CompareTag("Player"))
         {
             playerHealth.TakeDamage(weaponDamage);

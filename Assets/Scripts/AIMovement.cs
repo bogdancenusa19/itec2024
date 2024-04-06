@@ -40,7 +40,7 @@ public class AIMovement : MonoBehaviour
                 {
                     animator.SetBool("isRunning", true);
                     transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-                   
+                    isPlayerInRange = true;
                 }
                 else
                 {
