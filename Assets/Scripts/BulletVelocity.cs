@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class BulletVelocity : MonoBehaviour
 {
+    [Header("Attributes")]
     [SerializeField] private float bulletSpeed;
+    [SerializeField] private float duration = 3f;
+
     private Vector2 shootDirection;
     private float scaleToShoot = 0;
 
@@ -18,7 +21,7 @@ public class BulletVelocity : MonoBehaviour
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
         bulletRb = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, duration);
     }
     
     void FixedUpdate()
@@ -48,8 +51,7 @@ public class BulletVelocity : MonoBehaviour
             Debug.Log(playerHealth.GetHealth());
             Destroy(gameObject);
         }
-
-        if (other.CompareTag("Enemy"))
+        else if (other.CompareTag("Enemy"))
         {
             other.GetComponent<Health>().TakeDamage(weaponDamage);
             if (other.GetComponent<Health>().GetHealth() <= 0)
@@ -58,5 +60,10 @@ public class BulletVelocity : MonoBehaviour
             }
             Destroy(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
 }

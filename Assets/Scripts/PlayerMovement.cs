@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 { 
     [Header("Attributes")]
     [SerializeField] private float speed = 8.0f;
+    [SerializeField] private float airControlSpeed = 1.0f;
     [SerializeField] private float jumpPower = 30.0f;
     [SerializeField] private float jumpVelocityShift = 0.5f;
 
@@ -20,11 +21,18 @@ public class PlayerMovement : MonoBehaviour
     #region Private Variables
     private float horizontal;
     private bool isFacingRight = true;
+    private float currentSpeed;
     #endregion
+
+    private void Start()
+    {
+        currentSpeed = speed;
+    }
 
     void Update()
     {
         Jump();
+        AirControl();
         FlipMouseDirection();
         IsGrounded();
         if(rb.velocity.x != 0)
@@ -41,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Move
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
     }
 
     private void Jump()
@@ -57,6 +65,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * jumpVelocityShift);
+        }
+    }
+
+    private void AirControl()
+    {
+        if(rb.velocity.y != 0)
+        {
+            currentSpeed = airControlSpeed;
+        }
+        else
+        {
+            currentSpeed = speed;
         }
     }
 
