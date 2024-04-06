@@ -7,7 +7,7 @@ public class EnemiesShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform gunEndpoint;
-    [SerializeField] private float timeBetweenSpawns = 1f;
+    private float timeBetweenSpawns = 1f;
     private float nextSpawnTime = 0f;
     private GameObject instantiatedBullet;
 
