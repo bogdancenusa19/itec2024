@@ -8,6 +8,8 @@ TagManager:
   - Coin
   - PlayerArm
   - Ground
+  - RatSpawner
+  - Rat
   layers:
   - Default
   - TransparentFX
