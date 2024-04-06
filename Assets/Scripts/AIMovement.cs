@@ -19,7 +19,7 @@ public class AIMovement : MonoBehaviour
     private PlayerMovement player;
     private float distance;
 
-    private bool isPlayerInRange = true;
+    private bool isPlayerInRange = false;
     private bool canMove = true;
 
     private void Start()
@@ -76,8 +76,12 @@ public class AIMovement : MonoBehaviour
     }
 
     public bool CanShootPlayer()
-    {
-        return isPlayerInRange;
+    {   
+        if (player != null && isPlayerInRange)
+        {
+            return true;
+        }
+        return false;
     }
 
     private void OnDrawGizmos()
