@@ -817,6 +817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   maxHealth: 100
+  isThisPlayer: 1
+  _slider: {fileID: 0}
 --- !u!114 &2267679325678784759
 MonoBehaviour:
   m_ObjectHideFlags: 0
