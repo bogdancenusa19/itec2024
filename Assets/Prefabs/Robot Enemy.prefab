@@ -463,7 +463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4455492815874003403, guid: ca6757dd2a3ef4a09b8806da579afe06, type: 3}
   gunEndpoint: {fileID: 1816169622715822763}
-  damage: 20
+  damage: 25
 --- !u!114 &7416693502254758505
 MonoBehaviour:
   m_ObjectHideFlags: 0

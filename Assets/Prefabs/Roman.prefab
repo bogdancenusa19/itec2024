@@ -726,9 +726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1115d5c4791044e3c84f28f1e008ecd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  chaseDistance: 16
-  rangeDistance: 21
+  speed: 8
+  chaseDistance: 22
+  rangeDistance: 26
   groundCheck: {fileID: 1448999307602852662}
   groundLayer:
     serializedVersion: 2
@@ -747,7 +747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4455492815874003403, guid: ca6757dd2a3ef4a09b8806da579afe06, type: 3}
   gunEndpoint: {fileID: 8255669347958010502}
-  damage: 10
+  damage: 20
 --- !u!114 &96255963954451248
 MonoBehaviour:
   m_ObjectHideFlags: 0

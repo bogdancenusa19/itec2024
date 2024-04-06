@@ -2268,6 +2268,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &304717742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2100261730843128774, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
+  m_PrefabInstance: {fileID: 2077516858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &314964874
 GameObject:
   m_ObjectHideFlags: 0
@@ -7534,6 +7545,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1477651806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1246824018486375674, guid: 5506e895bee44433c884af4a63e50109, type: 3}
+  m_PrefabInstance: {fileID: 1761117277}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1482356291
 GameObject:
   m_ObjectHideFlags: 0
@@ -11095,10 +11111,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.498
       objectReference: {fileID: 0}
+    - target: {fileID: 1438453145859878712, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+      propertyPath: drone
+      value: 
+      objectReference: {fileID: 1477651806}
+    - target: {fileID: 1438453145859878712, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+      propertyPath: weaponUI
+      value: 
+      objectReference: {fileID: 304717742}
     - target: {fileID: 2267679325678784759, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       propertyPath: bullet
       value: 
       objectReference: {fileID: 4455492815874003403, guid: 136d41f812a57924b83547fe2b10fe0e, type: 3}
+    - target: {fileID: 2267679325678784759, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+      propertyPath: bulletPistol
+      value: 
+      objectReference: {fileID: 4455492815874003403, guid: 136d41f812a57924b83547fe2b10fe0e, type: 3}
+    - target: {fileID: 2267679325678784759, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+      propertyPath: shotgunBullet
+      value: 
+      objectReference: {fileID: 4455492815874003403, guid: 44f7f57ae52844d10b626ac2bfe43ce8, type: 3}
     - target: {fileID: 2267679325678784759, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       propertyPath: endpoints.Array.size
       value: 1
@@ -12301,11 +12333,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454925282558468256, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 454925282558468256, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1038140150494034161, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_UiScaleMode
@@ -12318,6 +12350,18 @@ PrefabInstance:
     - target: {fileID: 1038140150494034161, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2981894878560713625, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2981894878560713625, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2981894878560713625, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3385559677419234519, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_Pivot.x
@@ -12413,7 +12457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6022660407351562010, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

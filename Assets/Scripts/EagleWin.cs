@@ -10,10 +10,7 @@ public class EagleWin : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            if (!PlayerPrefs.HasKey("Level2"))
-            {
-                PlayerPrefs.SetInt("Level2", 1);
-            }
+            PlayerPrefs.SetInt("Level2", 1);
 
             SceneManager.LoadScene("MainMenu");
         }
