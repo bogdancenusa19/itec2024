@@ -67,18 +67,21 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FlipMouseDirection()
-{
-    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    
-    // Verificăm dacă mouse-ul este la dreapta sau la stânga personajului
-    bool mouseIsRightOfPlayer = mousePosition.x >= transform.position.x;
-
-    // Dacă orientarea personajului nu este aliniată cu poziția mouse-ului, întoarcem personajul
-    if((mouseIsRightOfPlayer && !isFacingRight) || (!mouseIsRightOfPlayer && isFacingRight))
     {
-        Flip();
+        var mousePos = Input.mousePosition;
+        mousePos.z = 10;
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(mousePos);
+
+    
+        // Verificăm dacă mouse-ul este la dreapta sau la stânga personajului
+        bool mouseIsRightOfPlayer = mousePosition.x >= transform.position.x;
+
+        // Dacă orientarea personajului nu este aliniată cu poziția mouse-ului, întoarcem personajul
+        if((mouseIsRightOfPlayer && !isFacingRight) || (!mouseIsRightOfPlayer && isFacingRight))
+        {
+            Flip();
+        }
     }
-}
 
 private void Flip()
 {
