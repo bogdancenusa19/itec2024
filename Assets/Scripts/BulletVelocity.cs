@@ -13,7 +13,6 @@ public class BulletVelocity : MonoBehaviour
     public GameObject particleEffect;
 
     private Vector2 shootDirection;
-    private float scaleToShoot = 0;
 
     private Rigidbody2D bulletRb;
     private int weaponDamage = 0;

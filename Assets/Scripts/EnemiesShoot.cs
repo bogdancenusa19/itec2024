@@ -24,7 +24,6 @@ public class EnemiesShoot : MonoBehaviour
     {
         if (enemyAI.CanShootPlayer())
         {
-            Debug.Log("Shooting playe");
             if (Time.time > nextSpawnTime)
             {
                 SpawnBullet();

@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class LightFlicker : MonoBehaviour
 {
-    public Light2D light;
+    public new Light2D light;
 
     public float maxIntensity;
     public float minIntensity;

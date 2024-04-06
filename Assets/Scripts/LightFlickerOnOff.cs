@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 public class LightFlickerOnOff : MonoBehaviour
 {
     [Header("Objects")]
-    public Light2D light;
+    public new Light2D light;
 
     [Header("Attributes")]
     public float minFlickerTime;
