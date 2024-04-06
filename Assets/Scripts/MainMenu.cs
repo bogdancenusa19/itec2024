@@ -8,9 +8,9 @@ using Image = UnityEngine.UI.Image;
 
 public class MainMenu : MonoBehaviour
 {    
-    public void Play()
+    public void Play(int index)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(index);
     }
 
     public void UpgradePlayer()
