@@ -26,9 +26,14 @@ public class BulletVelocity : MonoBehaviour
         bulletRb.velocity = new Vector2(bulletSpeed * scaleToShoot, 0f);
     }
 
-    public void SetCorrectScale(GameObject parent)
+    public void SetCorrectScaleForEnemies(GameObject parent)
     {
         scaleToShoot = -parent.transform.localScale.x;
+    }
+
+    public void SetCorrectScaleForPlayer(GameObject parent)
+    {
+        scaleToShoot = parent.transform.localScale.x;
     }
 
     public void SetDamage(int value)

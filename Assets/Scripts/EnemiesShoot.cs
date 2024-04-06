@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class EnemiesShoot : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform gunEndpoint;
     private float timeBetweenSpawns = 1f;
@@ -37,7 +36,7 @@ public class EnemiesShoot : MonoBehaviour
     {
        instantiatedBullet = Instantiate(bullet, gunEndpoint.position , gunEndpoint.rotation);
        BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
-       bulletVelocity.SetCorrectScale(gameObject);
+       bulletVelocity.SetCorrectScaleForEnemies(gameObject);
        bulletVelocity.SetDamage(damage);
 
     }

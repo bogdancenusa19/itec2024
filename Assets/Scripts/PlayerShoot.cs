@@ -1,0 +1,40 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Random = UnityEngine.Random;
+
+public class PlayerShoot : MonoBehaviour
+{
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform[] endpoints = new Transform[2];
+    private GameObject instantiatedBullet;
+    private int index = 0;
+
+    [SerializeField] private int damage;
+    
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+                SpawnBullet();
+        }
+    }
+
+    private void SpawnBullet()
+    {
+        if (index >= endpoints.Length)
+        {
+            index = 0;
+        }
+
+        instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
+        BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
+        bulletVelocity.SetCorrectScaleForPlayer(gameObject);
+        bulletVelocity.SetDamage(damage);
+        index++;
+
+        
+    }
+    
+}
