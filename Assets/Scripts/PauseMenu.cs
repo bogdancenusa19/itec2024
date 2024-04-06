@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu: MonoBehaviour
 {
     public GameObject pauseMenuUI; // Referință la UI-ul de pauză
 
@@ -39,19 +38,22 @@ public class PauseMenu : MonoBehaviour
     public void RestartGame()
     {
         Debug.Log("Restart!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f; // Reia timpul jocului
+        Application.LoadLevel(Application.loadedLevel); // Reîncarcă scena curentă
     }
     
     public void LoadMenu()
     {
         Debug.Log("Loading menu...");
+        Time.timeScale = 1f; // Reia timpul jocului
         Application.LoadLevel(0); // Încarcă scena cu indexul 0
     }
-    
+
     // Funcția de Quit poate fi apelată de un buton din meniul de pauză
     public void QuitGame()
     {
         Debug.Log("Quit!");
-        Application.Quit(); // Ieșire din joc
+        // iesim din joc
+        Application.Quit();
     }
 }
