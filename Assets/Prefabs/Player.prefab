@@ -701,8 +701,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.092587374, y: 1.1578121}
-  m_Size: {x: 4.5868692, y: 8.03303}
+  m_Offset: {x: -0.092587374, y: 1.3176078}
+  m_Size: {x: 4.5868692, y: 7.7134404}
   m_Direction: 0
 --- !u!50 &2289341837191980424
 Rigidbody2D:
@@ -743,7 +743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65bf072d825208740931961f6aa171e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
+  airControlSpeed: 10
   jumpPower: 40
   jumpVelocityShift: 0.5
   rb: {fileID: 2289341837191980424}
@@ -789,6 +790,7 @@ MonoBehaviour:
   maxHealth: 100
   isThisPlayer: 1
   _slider: {fileID: 0}
+  bloodParticles: {fileID: 8740031031746132334, guid: 9b649aff4dc31a345aac9e86f19fbda5, type: 3}
 --- !u!114 &2267679325678784759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1cb6764e7974d3cb85e81a7b158627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBag: {fileID: 0}
+  playerBag: {fileID: 1205918260733019953}
 --- !u!1 &7248275442617781272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6181191652062813297}
+  enemy: {fileID: 0}
   arms: {fileID: 8570439811674261985}
 --- !u!1 &8923543263324407622
 GameObject:
@@ -1425,6 +1428,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3dd7932b6214f829736b667bf8a2ce, type: 3}
+--- !u!1 &1205918260733019953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6642905214198229539, guid: 2d3dd7932b6214f829736b667bf8a2ce, type: 3}
+  m_PrefabInstance: {fileID: 5515818124018330898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1812073888485676995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6172703108569053905, guid: 2d3dd7932b6214f829736b667bf8a2ce, type: 3}

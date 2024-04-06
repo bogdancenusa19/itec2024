@@ -3789,6 +3789,10 @@ PrefabInstance:
       value: -3.498
       objectReference: {fileID: 0}
     - target: {fileID: 2267679325678784759, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
+      propertyPath: accuracy
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267679325678784759, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       propertyPath: endpoints.Array.size
       value: 1
       objectReference: {fileID: 0}
