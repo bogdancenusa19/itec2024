@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Jump();
-        Flip();
+        FlipMouseDirection();
         IsGrounded();
         if(rb.velocity.x != 0)
         {
@@ -66,14 +66,25 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    private void Flip()
+    private void FlipMouseDirection()
+{
+    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    
+    // Verificăm dacă mouse-ul este la dreapta sau la stânga personajului
+    bool mouseIsRightOfPlayer = mousePosition.x >= transform.position.x;
+
+    // Dacă orientarea personajului nu este aliniată cu poziția mouse-ului, întoarcem personajul
+    if((mouseIsRightOfPlayer && !isFacingRight) || (!mouseIsRightOfPlayer && isFacingRight))
     {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1;
-            transform.localScale = localScale;
-        }
+        Flip();
     }
+}
+
+private void Flip()
+{
+    isFacingRight = !isFacingRight;
+    Vector3 localScale = transform.localScale;
+    localScale.x *= -1;
+    transform.localScale = localScale;
+}
 }
