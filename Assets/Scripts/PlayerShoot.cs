@@ -6,7 +6,9 @@ using Random = UnityEngine.Random;
 
 public class PlayerShoot : MonoBehaviour
 {
-    [SerializeField] private GameObject bullet;
+    [SerializeField] private GameObject bulletPistol;
+    [SerializeField] private GameObject shotgunBullet;
+    private GameObject bullet;
     [SerializeField] private Transform[] endpoints = new Transform[2];
     [SerializeField] private float accuracy = 100f; 
     private GameObject instantiatedBullet;
@@ -22,6 +24,15 @@ public class PlayerShoot : MonoBehaviour
 
     private void Update()
     {
+        if (!gameObject.GetComponent<UpdatePlayer>().GetIsUsingPistol())
+        {
+            bullet = shotgunBullet;
+        }
+        else
+        {
+            bullet = bulletPistol;
+        }
+        
         if (Input.GetMouseButtonDown(0))
         {
                 SpawnBullet();

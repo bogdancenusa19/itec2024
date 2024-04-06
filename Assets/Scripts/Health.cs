@@ -40,7 +40,14 @@ public class Health : MonoBehaviour
 
     public void Heal(int ammount)
     {
-        currentHealth += ammount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+           currentHealth += ammount; 
+        }
         UpdateUI();
     }
 

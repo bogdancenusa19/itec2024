@@ -25,6 +25,7 @@ public class UpdatePlayer : MonoBehaviour
     private int lizardsNumber = 5;
 
     private Animator _animator;
+    private Health _health;
     
     private void Awake()
     {
@@ -37,6 +38,8 @@ public class UpdatePlayer : MonoBehaviour
     private void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
+        _health = gameObject.GetComponent<Health>();
+        
         if (hasPistol)
         {
             pistol.SetActive(true);
@@ -77,6 +80,7 @@ public class UpdatePlayer : MonoBehaviour
     private void HideLizard()
     {
         lizard.SetActive(false);
+        _health.Heal(30);
     }
 
     private void EatLizard()
@@ -93,5 +97,10 @@ public class UpdatePlayer : MonoBehaviour
     {
         ChangeToShotgun();
         EatLizard();
+    }
+
+    public bool GetIsUsingPistol()
+    {
+        return isUsingPistol;
     }
 }
