@@ -11,6 +11,7 @@ public class UpdatePlayer : MonoBehaviour
     [SerializeField] private GameObject shotgun;
     [SerializeField] private GameObject drone;
     [SerializeField] private GameObject lizard;
+    [SerializeField] private AudioSource eatSound;
 
     [SerializeField] private Image pistolSprite;
     [SerializeField] private Image shotgunSprite;
@@ -81,6 +82,7 @@ public class UpdatePlayer : MonoBehaviour
 
     private void HideLizard()
     {
+        eatSound.Play();
         lizard.SetActive(false);
         _health.Heal(30);
     }
