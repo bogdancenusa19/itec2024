@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -36,6 +37,7 @@ public class PauseMenu: MonoBehaviour
         isPaused = true;
     }
     
+    [Obsolete("Obsolete")]
     public void RestartGame()
     {
         Debug.Log("Restart!");
@@ -43,6 +45,7 @@ public class PauseMenu: MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
+    [Obsolete("Obsolete")]
     public void LoadMenu()
     {
         Debug.Log("Loading menu...");

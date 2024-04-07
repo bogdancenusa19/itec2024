@@ -64,7 +64,7 @@ public class BulletVelocity : MonoBehaviour
             }
             Destroy(gameObject);
         }
-        else if(other.CompareTag("Coin"))
+        else if(other.CompareTag("Coin") || other.CompareTag("RatSpawner"))
         {
             Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other);
         }
