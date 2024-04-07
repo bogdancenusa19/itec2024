@@ -1,13 +1,12 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPistol;
     [SerializeField] private GameObject shotgunBullet;
+    private bool isShotgun = false;
     private GameObject bullet;
     [SerializeField] private Transform[] endpoints = new Transform[2];
     [SerializeField] private float accuracy = 100f; 
@@ -18,6 +17,7 @@ public class PlayerShoot : MonoBehaviour
     private int index = 0;
 
     [SerializeField] private int damage;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,26 +28,47 @@ public class PlayerShoot : MonoBehaviour
         if (!gameObject.GetComponent<UpdatePlayer>().GetIsUsingPistol())
         {
             bullet = shotgunBullet;
+            isShotgun = true;
         }
         else
         {
             bullet = bulletPistol;
+            isShotgun = false;
         }
-        
+
         if (Input.GetMouseButtonDown(0) && !isPaused.activeSelf)
         {
+            if (isShotgun)
+            {
+                List<Collider2D> bulletColliders = new List<Collider2D>();
+                for (int i = 0; i < 5; i++)
+                {
+                    GameObject newBullet = SpawnBullet();
+                    bulletColliders.Add(newBullet.GetComponent<Collider2D>());
+                }
+                
+                // Ignoră coliziunile între toate gloanțele de shotgun
+                foreach (var bulletCollider1 in bulletColliders)
+                {
+                    foreach (var bulletCollider2 in bulletColliders)
+                    {
+                        if (bulletCollider1 != bulletCollider2)
+                        {
+                            Physics2D.IgnoreCollision(bulletCollider1, bulletCollider2);
+                        }
+                    }
+                }
+            }
+            else
+            {
                 SpawnBullet();
+            }
         }
     }
 
-    private void SpawnBullet()
+    private GameObject SpawnBullet()
     {
-        if (index >= endpoints.Length)
-        {
-            index = 0;
-        }
-
-        instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
+        GameObject instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
         BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
 
         // Direcția inițială
@@ -66,14 +87,15 @@ public class PlayerShoot : MonoBehaviour
         bulletVelocity.SetDirection(adjustedDirection);
         bulletVelocity.SetDamage(damage);
 
+        // Ignoră coliziunea între glonț și jucător
         Collider2D playerCollider = GetComponent<Collider2D>();
-        Collider2D bulletCollider = instantiatedBullet.GetComponent<Collider2D>();
-        if (playerCollider != null && bulletCollider != null)
+        if (playerCollider != null)
         {
-            Physics2D.IgnoreCollision(playerCollider, bulletCollider);
+            Physics2D.IgnoreCollision(playerCollider, instantiatedBullet.GetComponent<Collider2D>());
         }
 
-        index++;
+        index = (index + 1) % endpoints.Length;
+
+        return instantiatedBullet;
     }
-    
 }
