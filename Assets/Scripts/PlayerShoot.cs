@@ -18,6 +18,8 @@ public class PlayerShoot : MonoBehaviour
 
     [SerializeField] private int damage;
 
+    [SerializeField] private AudioSource shootSound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -68,6 +70,7 @@ public class PlayerShoot : MonoBehaviour
 
     private GameObject SpawnBullet()
     {
+        shootSound.Play();
         GameObject instantiatedBullet = Instantiate(bullet, endpoints[index].position, endpoints[index].rotation);
         BulletVelocity bulletVelocity = instantiatedBullet.GetComponent<BulletVelocity>();
 
