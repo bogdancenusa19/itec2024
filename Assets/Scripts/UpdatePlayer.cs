@@ -60,7 +60,7 @@ public class UpdatePlayer : MonoBehaviour
 
     private void ChangeToShotgun()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (PlayerPrefs.GetInt("hasShotgun") == 1 && Input.GetKeyDown(KeyCode.E))
         {
             if (isUsingPistol)
             {

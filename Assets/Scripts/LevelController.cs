@@ -16,6 +16,8 @@ public class LevelController : MonoBehaviour
         SetLevels();
 
         level1.interactable = true;
+        level2.interactable = false;
+        level3.interactable = false;
 
         if (PlayerPrefs.GetInt("Level1") == 1)
         {
