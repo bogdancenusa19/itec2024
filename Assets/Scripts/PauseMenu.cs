@@ -37,20 +37,27 @@ public class PauseMenu: MonoBehaviour
         isPaused = true;
     }
     
-    [Obsolete("Obsolete")]
     public void RestartGame()
     {
         Debug.Log("Restart!");
         Time.timeScale = 1f;
+        Invoke("LateRestart", 0.75f);
+    }
+
+    private void LateRestart()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    
-    [Obsolete("Obsolete")]
     public void LoadMenu()
     {
         Debug.Log("Loading menu...");
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+       Invoke("LateMenu", 0.75f);
+    }
+
+    private void LateMenu()
+    {
+         SceneManager.LoadScene(0);
     }
     
     public void QuitGame()
