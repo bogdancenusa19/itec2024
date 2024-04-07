@@ -6399,17 +6399,6 @@ Canvas:
   m_SortingLayerID: -1711535651
   m_SortingOrder: 9
   m_TargetDisplay: 0
---- !u!114 &982987814 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1364319400442529630, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
-  m_PrefabInstance: {fileID: 2077516858}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1007951827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11403,7 +11392,7 @@ PrefabInstance:
     - target: {fileID: 1438453145859878712, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       propertyPath: lizardUses
       value: 
-      objectReference: {fileID: 982987814}
+      objectReference: {fileID: 2077516860}
     - target: {fileID: 2267679325678784759, guid: e710cdc47c58fb042b594e1064f7cdca, type: 3}
       propertyPath: isPaused
       value: 
@@ -13248,6 +13237,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2077516860 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2247306214085005173, guid: fb09405247ba2428bb74450025a84d5d, type: 3}
+  m_PrefabInstance: {fileID: 2077516858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2090148538
