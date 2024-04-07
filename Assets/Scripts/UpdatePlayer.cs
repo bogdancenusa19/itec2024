@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,7 @@ public class UpdatePlayer : MonoBehaviour
     private bool isUsingPistol = true;
 
     private int lizardsNumber = 5;
+    [SerializeField] private TextMeshProUGUI lizardUses;
 
     private Animator _animator;
     private Health _health;
@@ -90,6 +92,7 @@ public class UpdatePlayer : MonoBehaviour
             lizard.SetActive(true);
             _animator.SetTrigger("Eat");
             lizardsNumber--;
+            lizardUses.text = lizardsNumber.ToString();
         }
     }
 
