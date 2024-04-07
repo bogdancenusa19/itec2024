@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   airControlSpeed: 10
-  jumpPower: 40
+  jumpPower: 45
   jumpVelocityShift: 0.5
   rb: {fileID: 2289341837191980424}
   animator: {fileID: 803513214071749387}
