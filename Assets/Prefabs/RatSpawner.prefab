@@ -95,13 +95,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6927401422893559914}
   - component: {fileID: 3990340390170120490}
+  - component: {fileID: 3744925679882601964}
   m_Layer: 0
   m_Name: SpawnRat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6927401422893559914
 Transform:
   m_ObjectHideFlags: 0
@@ -112,7 +113,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.1400001, y: -0.36, z: -0.08293116}
-  m_LocalScale: {x: 2.5033717, y: 2.5033717, z: 2.5033717}
+  m_LocalScale: {x: 0.20267637, y: 0.20267637, z: 0.20267637}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5101052487198469959}
@@ -170,6 +171,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3744925679882601964
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2451715000218761893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71c10eab837f9af4798e953bdc60312a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2886840206691345357
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +291,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 6.91
+  m_Radius: 5.53
 --- !u!114 &3957280805510353624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0d08af9e8c4b438e62087bd59268b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 2886840206691345357}
+  spawner: {fileID: 2451715000218761893}
+  spawnPoint: {fileID: 2886840206691345357}
   rat: {fileID: 2267575772856315945, guid: debeed1d667558d42b296c46a3f205dc, type: 3}
   timeToSpawn: 1
