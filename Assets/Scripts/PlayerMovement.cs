@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            gameObject.GetComponent<AudioSource>().Play();
             animator.SetTrigger("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpPower); // Jump
         }

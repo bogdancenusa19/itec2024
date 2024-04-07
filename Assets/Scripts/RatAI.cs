@@ -6,57 +6,70 @@ public class RatAI : MonoBehaviour
 {
     [Header("Attributes")]
     [SerializeField] private float speed;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private int currentHealth;
+
 
     [Header("Layer")]
     [SerializeField] private LayerMask groundLayer;
 
-    public Vector3 spawnPosition;
+    [HideInInspector] public Vector3 spawnPosition;
+    public GameObject portal;
+    [SerializeField] private GameObject bloodParticles;
+
 
     private PlayerMovement player;
-    private float distance;
-    private bool coinsStolen;
     private Vector3 target;
 
     
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         player = FindObjectOfType<PlayerMovement>();
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
+        target = new Vector3(player.transform.position.x, transform.position.y, 0);
         Rotate();
         Move();
     }
 
     private void Move()
     {
-        if (!coinsStolen)
-        {
-            // go towards the player
-            target = new Vector3(player.transform.position.x, transform.position.y, 0);
-        }
-        else
-        {
-            target = new Vector3(spawnPosition.x, transform.position.y, 0);
-        }
-  
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-
     }
 
     private void Rotate()
     {
-        if (player.transform.position.x > transform.position.x)
+        if (target.x > transform.position.x)
         {
             gameObject.transform.localScale = new Vector3(-5, 5, 5);
         }
-        else if (player.transform.position.x < transform.position.x)
+        else if (target.x < transform.position.x)
         {
             gameObject.transform.localScale = new Vector3(5, 5, 5);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Instantiate(bloodParticles, transform.position, Quaternion.identity);
+        currentHealth -= damage;
+    }
+
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
+
+    public void Die()
+    {
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -67,12 +80,12 @@ public class RatAI : MonoBehaviour
             int playerCoins = PlayerPrefs.GetInt("playerMoney");
             int stolenCoins = playerCoins / 2;
 
-            coinsStolen = true;
-        }
-    }
+            Debug.Log("Coins stolen: " + stolenCoins);
+            PlayerPrefs.SetInt("playerMoney", playerCoins - stolenCoins);
 
-    public bool MoneyIsStolen()
-    {
-        return coinsStolen;
+            Instantiate(portal, transform.position, Quaternion.identity);
+            Destroy(gameObject, 0.5f);
+
+        }
     }
 }

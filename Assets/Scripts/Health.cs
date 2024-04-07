@@ -54,9 +54,13 @@ public class Health : MonoBehaviour
 
     public void Die()
     {
-        if (currentHealth <= 0)
+        if (isThisPlayer && currentHealth <= 0)
         {
             SceneManager.LoadScene("GameOver");
+        }
+        else
+        {
+            Destroy(this.gameObject);
         }
     }
 

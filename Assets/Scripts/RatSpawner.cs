@@ -5,17 +5,12 @@ using UnityEngine;
 public class RatSpawner : MonoBehaviour
 {
     public GameObject spawner;
+    public GameObject spawnPoint;
     public GameObject rat;
     public float timeToSpawn;
 
 
     private bool startTimer = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -32,12 +27,16 @@ public class RatSpawner : MonoBehaviour
     IEnumerator SpawnRat(float timeToSpawn)
     {
         yield return new WaitForSeconds(timeToSpawn);
+        spawner.SetActive(true);
+        yield return new WaitForSeconds(timeToSpawn - 0.6f);
         SpawnRat();
+        yield return new WaitForSeconds(timeToSpawn);
+        Destroy(gameObject, 0.5f);
     }
 
     private void SpawnRat()
     {
-        GameObject ratAI = Instantiate(rat, spawner.transform.position, Quaternion.identity);
+        GameObject ratAI = Instantiate(rat, spawnPoint.transform.position, Quaternion.identity);
         ratAI.GetComponent<RatAI>().spawnPosition = transform.position;
     }
 
@@ -46,16 +45,6 @@ public class RatSpawner : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             startTimer = true;
-            CircleCollider2D collider = GetComponent<CircleCollider2D>();
-        }
-
-        if (collision.CompareTag("Rat"))
-        {
-            RatAI ratAI = collision.GetComponent<RatAI>();
-            if (ratAI.MoneyIsStolen())
-            {
-                Destroy(gameObject);
-            }
         }
     }
 }

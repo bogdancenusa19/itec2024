@@ -68,6 +68,15 @@ public class BulletVelocity : MonoBehaviour
         {
             Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other);
         }
+        else if (other.CompareTag("Rat"))
+        {
+            other.GetComponent<RatAI>().TakeDamage(weaponDamage);
+            if (other.GetComponent<RatAI>().GetHealth() <= 0)
+            {
+                other.GetComponent<RatAI>().Die();
+            }
+            Destroy(gameObject);
+        }
         else
         {
             Destroy(gameObject);
