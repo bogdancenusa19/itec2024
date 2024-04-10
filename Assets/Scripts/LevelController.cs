@@ -16,30 +16,24 @@ public class LevelController : MonoBehaviour
         SetLevels();
 
         level1.interactable = true;
-        level2.interactable = false;
-        level3.interactable = false;
 
         if (PlayerPrefs.GetInt("Level1") == 1)
         {
-            level1.interactable = false;
             level2.interactable = true;
         }
         else
         {
             level2.interactable = false;
-            level1.interactable = true;
+  
         }
 
         if(PlayerPrefs.GetInt("Level2") == 1)
         {
             level3.interactable = true;
-            level2.interactable = false;
         }
         else
         {
             level3.interactable = false;
-            level1.interactable = true;
-            level2.interactable = true;
         }
 
         if(PlayerPrefs.GetInt("Level3") == 1)
